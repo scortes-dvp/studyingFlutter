@@ -33,6 +33,7 @@ class HomeScreen extends GetView<HomeController> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
+            heroTag: "Decrease",
             onPressed: () {
               controller.decrease();
             },
@@ -42,6 +43,7 @@ class HomeScreen extends GetView<HomeController> {
             height: 10,
           ),
           FloatingActionButton(
+            heroTag: "Increase",
             onPressed: () {
               controller.increase();
             },
